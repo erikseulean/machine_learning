@@ -5,18 +5,11 @@ iterations = 1500
 alpha = 0.01
 
 def read_data():
-    data = np.loadtxt('restaurant_profit.txt', delimiter=',')
+    data = np.loadtxt('restaurant_profit.in', delimiter=',')
     X = data[:, 0]
     y = data[:, 1]
 
     return X, y
-
-def plot(X, y):
-    plt.scatter(X, y, marker='x')
-    plt.xlabel("Population of city in 10.000s")
-    plt.ylabel("Profit in $10.000s")
-    plt.show()
-
 
 def plot_best_fit(X, y, theta):
 
@@ -42,5 +35,4 @@ def gradient_descent(X, y, nr_iterations):
 
 
 X, y = read_data()
-#plot(X, y)
 plot_best_fit(X, y, gradient_descent(X, y, iterations))
