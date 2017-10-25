@@ -2,7 +2,7 @@
 
 ### Overview
 
-One & multi variable linear regression. Datasets are taken from the [coursera machine learning course](coursera.org/learn/machine-learning).
+One & multi variable linear regression. Datasets are taken from the [coursera machine learning course](http://coursera.org/learn/machine-learning).
 
 #### Datasets
 
