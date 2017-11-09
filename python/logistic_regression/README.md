@@ -40,6 +40,6 @@ def gradient_descent(X, y):
 
 ##### Result
 
-![img](boundary_line.JPG) 
+<img src=boundary_line.JPG width=400>
 
 
