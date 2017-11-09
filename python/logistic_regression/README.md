@@ -40,24 +40,6 @@ def gradient_descent(X, y):
 
 ##### Result
 
-![img](boundary_line.jpg) 
-
-![img](single_variable_plot.png)
+![img](boundary_line.JPG) 
 
 
-#### Multivariable linear regression
-
-![img](multivariable.png)
-
-```
-def gradient_descent(X, y):
-    theta = np.zeros((X.shape[1],1))
-    m = X.shape[0]
-    for _ in range(iterations):
-        X_transpose = np.transpose(X)
-        cost_deriv = (alpha/m) * np.dot(X_transpose, np.dot(X, theta) - y)
-        theta = theta - cost_deriv
-    return theta, cost
-```
-
-![img](multivariable_plot.png)
